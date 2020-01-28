@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_game"
+    android:background="@drawable/layout_bg" >
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remaining_time"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:30"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/board_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/board"
+        android:layout_below="@id/line1"
+        android:name="com.gleska.pegsolitaire.ui.game.Board"
+        android:layout_marginVertical="30dp" />
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_refresh_black"
+        android:layout_marginVertical="55dp"
+        android:layout_marginHorizontal="30dp" />
+
+</RelativeLayout>

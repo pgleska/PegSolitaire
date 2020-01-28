@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_starting">
+
+    <fragment
+        android:id="@+id/nav_starting"
+        android:name="com.gleska.pegsolitaire.ui.starting.StartingFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_starting" >
+        <action
+            android:id="@+id/action_nav_starting_to_nav_settings"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_starting_to_nav_game"
+            app:destination="@id/nav_game" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.gleska.pegsolitaire.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_game"
+        android:name="com.gleska.pegsolitaire.ui.game.GameFragment"
+        android:label="Game" />
+</navigation>

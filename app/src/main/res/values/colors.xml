@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#851E03</color>
+    <color name="colorPrimaryDark">#381408</color>
+    <color name="colorAccent">#F3BC00</color>
+
+    <color name="primary">#851E03</color>
+    <color name="primaryDark">#381408</color>
+
+    <color name="active">#DF0808</color>
+    <color name="marked">#680405</color>
+    <color name="potential">#09EC0F</color>
+    <color name="inactive">#979090</color>
+
+    <color name="active2">#09E013</color>
+    <color name="marked2">#106919</color>
+    <color name="potential2">#B82BFF</color>
+
+    <color name="active3">#FBC02D</color>
+    <color name="marked3">#946808</color>
+    <color name="potential3">#00FFEA</color>
+
+    <color name="white_opacity90">#F2FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="red">#DF0808</color>
+    <color name="green">#00660A</color>
+    <color name="yellow">#FBC02D</color>
+    <color name="dark_blue">#2D51F8</color>
+    <color name="brown">#834002</color>
+</resources>
